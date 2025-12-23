@@ -1,0 +1,34 @@
+body {
+    background-color: #141414;
+    color: #FFFFFF;
+    overflow: hidden;
+    margin: 0px;
+}
+
+.background-container {
+    position: absolute;
+    overflow:hidden;
+    width:400vw;
+    height:400vh;
+    background-image: url("images/MoriWebBackground.webp");
+    background-repeat: repeat;
+    background-size: 1080px;
+    transform: rotate(-20deg) translateY(-35%);
+}
+
+/* .inner-background-container {
+    background-image: url("images/MoriWebBackground.webp");
+    background-repeat: repeat-x;
+    background-size: contain;
+    width: 5076px;
+    animation: slide 5s infinite linear;
+} */
+
+@keyframes slide{
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
