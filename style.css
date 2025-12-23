@@ -8,12 +8,14 @@ body {
 .background-container {
     position: absolute;
     overflow:hidden;
-    width:400vw;
-    height:400vh;
+    width: 400vw;
+    height: 500vh;
+    rotate: -20deg;
     background-image: url("images/MoriWebBackground.webp");
     background-repeat: repeat;
     background-size: 1080px;
-    transform: rotate(-20deg) translateY(-35%);
+
+    animation: slide 50s infinite linear;
 }
 
 /* .inner-background-container {
@@ -26,9 +28,9 @@ body {
 
 @keyframes slide{
   0% {
-    transform: translate3d(0, 0, 0);
+    transform: translateX(0%) translateY(-30%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-1080px) translateY(-30%);
   }
 }
