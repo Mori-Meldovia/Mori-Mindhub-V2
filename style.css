@@ -77,7 +77,7 @@ body {
     padding-left: 2rem;
     width: max-content;
     height: max-content;
-    animation: left-to-right 15s linear reverse infinite;
+    animation: left-to-right 20s linear reverse infinite;
 }
 
 .purple-slider-text {
@@ -160,6 +160,9 @@ body {
 }
 
 @keyframes left-to-right {
+    from {
+        transform: translateX(0%);
+    }
     to {
         transform: translateX(-50%);
     }
@@ -167,10 +170,10 @@ body {
 
 @keyframes left-to-right-filler {
     from {
-        transform: translateX(5.5%);
+        transform: translateX(2.5%);
     }
     to {
-        transform: translateX(-4.25%);
+        transform: translateX(-2.85%);
     }
 }
 
@@ -189,7 +192,7 @@ body {
 
 #slider1 {
     /* transform: rotate(70deg) translateY(83.9VH); */
-    transform: rotate(70deg) translateY(652.574px);
+    transform: rotate(70deg) translateY(656.574px);
 }
 
 #arcane-slider {
@@ -215,7 +218,7 @@ body {
 @media (max-width: 1500px) {
     #slider1 {
         width: 125%;
-        transform: rotate(70deg) translateY(603.8px);
+        transform: rotate(70deg) translateY(628.5px);
     }
 
     #arcane-slider {
