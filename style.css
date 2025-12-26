@@ -111,7 +111,7 @@ body {
     overflow: clip;
     color: #FFFFFF;
     font-family: 'ZZZ glifs', sans-serif;
-    font-size: 3em;
+    font-size: 3rem;
 }
 
 .filler-slider {
@@ -163,14 +163,15 @@ body {
 }
 
 .inner-scroller {
-    display: flex;
+    display: inline-flex;
     gap: 2rem;
     padding-left: 2rem;
-    animation: yellow-left-to-right 3s linear reverse infinite;
+    animation: yellow-left-to-right 30s linear reverse infinite;
 }
 
 .item {
     overflow: clip;
+    display: inline-flex;
 }
 
 .yellow-scroller-backdrop {
@@ -193,11 +194,11 @@ body {
 }
 
 @keyframes yellow-left-to-right {
-    from {
-        transform: translateX(0%);
+    0% {
+    transform: translate3d(0, 0, 0);
     }
-    to {
-        transform: translateX(-40.5%);
+    100% {
+        transform: translate3d(-50%, 0, 0);
     }
 }
 
@@ -232,7 +233,7 @@ body {
 }
 
 #slider2 {
-    transform: rotate(70deg) translateY(895.79px);
+    transform: rotate(70deg) translateY(891.79px);
 }
 
 #thin1 {
@@ -242,6 +243,34 @@ body {
 #thin2 {
     transform: rotate(70deg) translateY(480px) translateX(375px);
 }
+
+.navigation-window {
+    border: 5px solid;
+    border-radius: 50px;
+    background-color: #123412;
+    height: 11.55VH;
+    width: 65%;
+    margin-left: 26VW;
+    margin-top: 2.3VH;
+    position:relative;
+    top: 0px;
+    align-content: center;
+}
+
+.navigation-button {
+    padding: 0;
+    border: none;
+    background: none;
+    /* margin-inline-start: 90px; */
+    margin-inline-start: 5.85VW;
+    float: left;
+    text-align: center;
+    font-size: 2.08VW;
+    font-family: 'ZZZ basic', sans-serif;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
 
 @media (max-width: 1500px) {
     #slider1 {
