@@ -23,7 +23,7 @@ body {
 h1 {
     color: #FFFFFF;
     font-family: 'ZZZ basic', sans-serif;
-    font-size: clamp(1.875rem, 1.7045rem + 0.6818vw, 2.25rem);
+    font-size: clamp(1.475rem, 1.5045rem + 0.4818vw, 2rem);
 }
 
 h2 {
@@ -62,7 +62,7 @@ body {
 
 .background-container {
     position: absolute;
-    overflow:hidden;
+    overflow: hidden;
     width: 600vw;
     height: 600vh;
     rotate: -20deg;
@@ -166,11 +166,11 @@ body {
     display: flex;
     gap: 2rem;
     padding-left: 2rem;
-    animation: left-to-right 30s linear reverse infinite;
+    animation: yellow-left-to-right 3s linear reverse infinite;
 }
 
 .item {
-    overflow: hidden;
+    overflow: clip;
 }
 
 .yellow-scroller-backdrop {
@@ -189,6 +189,15 @@ body {
     }
     to {
         transform: translateX(-50%);
+    }
+}
+
+@keyframes yellow-left-to-right {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-40.5%);
     }
 }
 
@@ -223,7 +232,7 @@ body {
 }
 
 #slider2 {
-    transform: rotate(70deg) translateY(890.79px);
+    transform: rotate(70deg) translateY(895.79px);
 }
 
 #thin1 {
@@ -382,7 +391,12 @@ body {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 520px) {
+    #slider1 {
+        width: 200%;
+        transform: rotate(70deg) translateY(605.148px) translateX(350px);
+    }
+
     .yellow-scroller-backdrop {
         visibility: hidden;
     }
